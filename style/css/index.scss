@@ -1,0 +1,615 @@
+$azullogo:#0B0C1B;
+$verdelogo:#2FAC66;
+$bg: #040509;
+
+// .logo{
+//     margin-right: 15px;
+//     width: 60px;
+//     transition: all 0.5s ease;
+// }
+// .logo:hover{
+//     transform: scale(1.2) rotate(360deg);
+// }
+
+.custom-shape-divider-top-1647358628 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1647358628 svg {
+    position: relative;
+    display: block;
+    width: calc(161% + 1.3px);
+    height: 500px;
+}
+
+.custom-shape-divider-top-1647358628 .shape-fill {
+    fill: #0B0C1B;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1647358628 svg {
+        width: calc(161% + 1.3px);
+        height: 500px;
+    }
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* nav style */
+.navbar{
+    top: -10px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.navbar.sticky{
+    padding: 10px 0;
+    background: $azullogo;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span:hover{
+    color: $verdelogo;
+}
+
+.navbar.sticky .logo a span:hover{
+    transition: all 0.5s ease;
+    color: $verdelogo;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    transition: all 0.5s ease;
+}
+
+.navbar .menu li a:hover{
+    color: $verdelogo;
+    font-size: 20px;
+}
+
+.navbar.sticky .menu li a:hover{
+    transition: all 0.5s ease;
+    color: $verdelogo;
+    text-decoration: underline;
+}
+
+/* meno btn */
+
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.menu-btn:hover{
+    color: $verdelogo;
+}
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: $azullogo;
+    left: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;    
+}
+/* home section */
+.home{
+    display: flex;
+    background: url("https://pbs.twimg.com/media/DqcKMVZXgAEoXL9?format=jpg&name=large") no-repeat;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+}
+
+.home .max-width{
+    margin: auto 0 auto 50px;
+}
+
+.home .home-conten .text-1{
+    font-size: 27px;
+}
+
+.home .home-conten .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-conten .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-conten .text-3 span{    
+    color: $verdelogo;
+    font-weight: 500;
+}
+
+/* aboutme start */
+section{
+   padding: 100px 0;
+}
+
+section .tittle{
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+section .tittle::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 190px;
+    height: 3px;
+    background: #000;
+    transform: translateX(-50%);
+}
+
+section .tittle::after{
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: $verdelogo;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.about .tittle::after{
+    content: "Quienes somos";
+}
+
+section .about-conten,
+.expe .expe-conten,
+.skill .skill-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-conten .left img{
+    height: 300px;
+    width: 300px;      
+    object-fit: cover;  
+    border-radius: 15px;
+}
+
+.about .about-conten .right{
+    width: 50%;
+}
+
+.about .about-conten .right .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.about .about-conten .right .text span{
+    color: $verdelogo;
+}
+
+.about .about-conten .right p{
+    text-align: justify;
+}
+
+.about .about-conten .right a{
+    display: inline-block;
+    background: $verdelogo;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid $verdelogo;
+    transition: all 0.5s ease;
+}
+
+.about .about-conten .right a:hover{
+    color: $verdelogo;
+    background: none;
+
+}
+
+/* expe style */
+
+.expe, .work{
+    color: #fff;
+    background: #000;
+}
+
+.expe .tittle::before,
+.work .tittle::before{
+    background: #fff;
+}
+
+.expe .tittle::after,
+.work .tittle::after{
+    background: #000;
+    content: "En que trabajo";
+}
+
+.expe .expe-conten .card{
+    width: calc(33% - 20px);
+    background: #222;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.expe .expe-conten .card:hover{
+    background: $verdelogo;
+}
+
+.expe .expe-conten .card .box{
+    transition: all 0.5s ease;
+}
+
+.expe .expe-conten .card:hover .box{
+    transform: scale(1.05);
+}
+
+.expe .expe-conten .card i{
+    font-size: 50px;
+    color: $verdelogo;
+    text-align: center;
+    transition: color 0.5s ease;
+}
+
+.expe .expe-conten .card:hover i{
+    color: #fff;
+}
+
+.expe .expe-conten .card .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+/* skill style */
+.skill .tittle::after{
+    content: "Lo que sé";
+}
+
+.skill .skill-content .column{
+    width: calc(50% - 30px);
+}
+
+.skill .skill-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}   
+
+.skill .skill-content .right .bar{
+    margin-bottom: 15px;
+}
+
+.skill .skill-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222;
+    align-items: center;
+    border-radius: 2px;
+    padding: 10px 15px;
+    transition: all 0.5s ease;
+}
+
+.skill .skill-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+}
+.skill .skill-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+
+.skill .skill-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: $verdelogo;    
+}
+
+.skill-content .right .c::before{
+    width: 80%;
+}
+
+.skill-content .right .cc::before{
+    width: 60%;
+}
+
+.skill-content .right .cshap::before{
+    width: 90%;
+}
+
+.skill-content .right .python::before{
+    width: 90%;
+}
+
+.skill-content .right .django::before{
+    width: 90%;
+}
+
+.skill-content .right .html::before{
+    width: 90%;
+}
+
+.skill-content .right .css::before{
+    width: 95%;
+}
+
+.skill-content .right .js::before{
+    width: 70%;
+}
+
+.skill-content .right .sql::before{
+    width: 95%;
+}
+
+/* Proyects style */
+
+.work .tittle::after{
+    content: "Alguno de ellos";
+}
+
+.work .carsel .card{
+    background: #222;
+    border-radius: 10px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.work .carsel .card:hover{
+    background: $verdelogo;
+}
+
+.work .carsel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.work .carsel .card:hover .box{
+    transform: scale(1.05);
+}
+
+.work .carsel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.work .carsel .card video{
+    height: 150px;
+    width: 250px;
+    object-fit: cover;    
+    border: 2px solid $verdelogo;
+    transition: all 0.5s ease;
+}
+
+.work .carsel .card:hover video{
+    border-color: #fff;
+}
+
+/* footer style */
+footer{
+    text-align: center;
+    background: #000;
+    padding: 20px 23px;
+    color: #fff;
+}
+
+footer span a{
+    color: $verdelogo;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* responsive style */
+@media (max-width: 1300px){ 
+    .home .max-width{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1104px){ 
+    .about .about-conten .left img{
+        height: 350px;
+        width: 350px;      
+    }
+}
+
+@media (max-width: 991px){ 
+    .max-width{
+        padding: 0 50px
+    }
+}
+
+@media (max-width: 947px){ 
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active::before{
+        content: "\f00d";
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: auto;
+        width: 100%;
+        top: 0;
+        right: -100%;
+        background: #222;
+        border-radius: 0 0  0 20%;
+        text-align: center;
+        padding-top: 15px;
+        transition: all 0.5s ease;
+    }
+
+    .navbar .menu.active{
+        right: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-conten .text-2{
+        font-size: 70px;
+    }
+    
+    .home .home-conten .text-3{
+        font-size: 35px;
+    }
+    
+    .max-width{
+        max-width: 800px;
+    }
+
+    .about .about-conten .column{
+        width: 100%;
+    }
+
+    .about .about-conten .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-conten .right{
+        flex: 100%;
+    }
+
+    .expe .expe-conten .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .skill .skill-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+}
+
+@media (max-width: 690px){ 
+    .max-width{
+        padding: 0 23px
+    }
+
+    .home .home-conten .text-2{
+        font-size: 60px;
+    }
+    
+    .home .home-conten .text-3{
+        font-size: 32px;
+    }
+    .expe .expe-conten .card,
+    .skill .skill-content .column{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){ 
+    .max-width{
+        padding: 0 23px
+    }
+
+    .home .home-conten .text-2{
+        font-size: 50px;
+    }
+    
+    .home .home-conten .text-3{
+        font-size: 27px;
+    }
+}

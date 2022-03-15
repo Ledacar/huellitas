@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    font-family: 'Acme', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5 ease;
+}
+
+.navbar{
+    transition: all 0.5s ease;
+}
+
+::-webkit-scrollbar {
+    width: 2px; /* ancho barra */
+  }
+  ::-webkit-scrollbar-track {
+    background: #0B0C1B; /* color fondo barra */
+    opacity: 0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #2FAC66; /* color barra */
+    border-radius: 50px; /* borde barra */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #299759 /* color barra hover */
+  }
+
+  .cotenedorhead{
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
