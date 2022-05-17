@@ -32,7 +32,7 @@
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 html {
@@ -46,7 +46,7 @@ html {
 }
 
 /* nav style */
-.navbar {
+.navbarr {
   top: -10px;
   position: fixed;
   width: 100%;
@@ -56,12 +56,12 @@ html {
   transition: all 0.5s ease;
 }
 
-.navbar.sticky {
+.navbarr.sticky {
   padding: 10px 0;
   background: #0B0C1B;
 }
 
-.navbar .max-width {
+.navbarr .max-width {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,28 +73,31 @@ html {
           justify-content: space-between;
 }
 
-.navbar .logo a {
+.navbarr .logo a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
   font-size: 35px;
   font-weight: 600;
 }
 
-.navbar .logo a span:hover {
+.navbarr .logo a span:hover {
   color: #2FAC66;
 }
 
-.navbar.sticky .logo a span:hover {
+.navbarr.sticky .logo a span:hover {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   color: #2FAC66;
 }
 
-.navbar .menu li {
+.navbarr .menu li {
   list-style: none;
   display: inline-block;
 }
 
-.navbar .menu li a {
+.navbarr .menu li a {
   display: block;
   color: #fff;
   font-size: 18px;
@@ -106,12 +109,12 @@ html {
   transition: all 0.5s ease;
 }
 
-.navbar .menu li a:hover {
+.navbarr .menu li a:hover {
   color: #2FAC66;
   font-size: 20px;
 }
 
-.navbar.sticky .menu li a:hover {
+.navbarr.sticky .menu li a:hover {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   color: #2FAC66;
@@ -235,7 +238,8 @@ section .tittle::after {
 
 section .about-conten,
 .expe .expe-conten,
-.skill .skill-content {
+.skill .skill-content,
+.contact .contact-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,6 +298,65 @@ section .about-conten,
   background: none;
 }
 
+/* cita */
+.skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1600,h_900/https://www.interiorismoconceptual.com/wp-content/uploads/2017/09/clinica_veterinaria_sevilla.jpg");
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+}
+
+.skill .skill-content .left img {
+  height: 400px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5%;
+}
+
+.skill .skill-content .right {
+  padding: 25px;
+  background: rgba(0, 185, 71, 0.671);
+  width: 50%;
+}
+
+.skill .skill-content .right .text {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.skill .skill-content .right .text span {
+  color: #070c25;
+}
+
+.skill .skill-content .right p {
+  text-align: justify;
+  color: #0B0C1B;
+}
+
+.skill .skill-content .right a {
+  display: inline-block;
+  background: #042aff;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid #042aff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.skill .skill-content .right a:hover {
+  color: #042aff;
+  background: none;
+}
+
 /* expe style */
 .expe, .work {
   color: #fff;
@@ -308,7 +371,27 @@ section .about-conten,
 .expe .tittle::after,
 .work .tittle::after {
   background: #000;
-  content: "En que trabajo";
+  content: "¿Que ofrecemos?";
+}
+
+.expe a {
+  display: inline-block;
+  background: #2FAC66;
+  color: #fff;
+  margin-left: 250px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid #2FAC66;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.expe a:hover {
+  color: #2FAC66;
+  background: none;
 }
 
 .expe .expe-conten .card {
@@ -356,175 +439,221 @@ section .about-conten,
   margin: 10px 0 7px 0;
 }
 
-/* skill style */
-.skill .tittle::after {
-  content: "Lo que sé";
+/* contact section styling */
+.contact {
+  padding: 50px;
+  background: #040509;
+  color: #fff;
 }
 
-.skill .skill-content .column {
+.contact .contact-content .column {
   width: calc(50% - 30px);
 }
 
-.skill .skill-content .left .text {
-  font-size: 25px;
+.contact .contact-content .text {
+  font-size: 20px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  color: #2FAC66;
 }
 
-.skill .skill-content .right .bar {
-  margin-bottom: 15px;
-}
-
-.skill .skill-content .right .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: #222;
-  align-items: center;
-  border-radius: 2px;
-  padding: 10px 15px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.skill .skill-content .right span {
-  font-weight: 500;
-  font-size: 18px;
+.contact .contact-content .left p {
+  text-align: justify;
   color: #fff;
 }
 
-.skill .skill-content .right .line {
-  height: 5px;
-  width: 100%;
-  background: lightgray;
-  position: relative;
+.contact .contact-content .left .icons {
+  margin: 10px 0;
 }
 
-.skill .skill-content .right .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: #2FAC66;
-}
-
-.skill-content .right .c::before {
-  width: 80%;
-}
-
-.skill-content .right .cc::before {
-  width: 60%;
-}
-
-.skill-content .right .cshap::before {
-  width: 90%;
-}
-
-.skill-content .right .python::before {
-  width: 90%;
-}
-
-.skill-content .right .django::before {
-  width: 90%;
-}
-
-.skill-content .right .html::before {
-  width: 90%;
-}
-
-.skill-content .right .css::before {
-  width: 95%;
-}
-
-.skill-content .right .js::before {
-  width: 70%;
-}
-
-.skill-content .right .sql::before {
-  width: 95%;
-}
-
-/* Proyects style */
-.work .tittle::after {
-  content: "Alguno de ellos";
-}
-
-.work .carsel .card {
-  background: #222;
-  border-radius: 10px;
-  padding: 25px 35px;
-  text-align: center;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.work .carsel .card:hover {
-  background: #2FAC66;
-}
-
-.work .carsel .card .box {
+.contact .contact-content .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  height: 65px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contact .contact-content .row .info {
+  margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+  font-size: 25px;
+  color: #2FAC66;
+}
+
+.contact .contact-content .info .head {
+  font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title {
+  color: #fff;
+}
+
+.contact .right form .fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+
+.contact .right form .name {
+  margin-right: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+  border-color: #b3b3b3;
+}
+
+.contact .right form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+
+.contact .right form .button-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right form .button-area button {
+  color: #fff;
+  display: block;
+  width: 160px !important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background: #2FAC66;
+  border: 2px solid #2FAC66;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.right form .button-area button:hover {
+  color: #2FAC66;
+  background: none;
+}
+
+/* footer */
+.pie-pagina {
+  width: 100%;
+  background-color: #222;
+}
+
+.pie-pagina .grupo-1 h2 {
+  color: #2FAC66 !important;
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 200px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #040509;
   text-align: center;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  border-radius: 25px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
-.work .carsel .card:hover .box {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: #2FAC66;
 }
 
-.work .carsel .card .text {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
-}
-
-.work .carsel .card video {
-  height: 150px;
-  width: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: 2px solid #2FAC66;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.work .carsel .card:hover video {
-  border-color: #fff;
-}
-
-/* footer style */
-footer {
+.pie-pagina .grupo-2 {
+  background-color: #333333;
+  padding: 15px 10px;
   text-align: center;
-  background: #000;
-  padding: 20px 23px;
   color: #fff;
 }
 
-footer span a {
-  color: #2FAC66;
-  text-decoration: none;
-  text-align: center;
+.pie-pagina .grupo-2 b {
+  font-weight: 500;
+}
+
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
 }
 
 /* responsive style */
@@ -555,7 +684,7 @@ footer span a {
   .menu-btn i.active::before {
     content: "\f00d";
   }
-  .navbar .menu {
+  .navbarr .menu {
     position: fixed;
     height: auto;
     width: 100%;
@@ -568,13 +697,13 @@ footer span a {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
-  .navbar .menu.active {
+  .navbarr .menu.active {
     right: 0;
   }
-  .navbar .menu li {
+  .navbarr .menu li {
     display: block;
   }
-  .navbar .menu li a {
+  .navbarr .menu li a {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
@@ -609,9 +738,23 @@ footer span a {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
+  .expe a {
+    margin-left: 15px !important;
+  }
   .skill .skill-content .column {
     width: 100%;
     margin-bottom: 35px;
+  }
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
   }
 }
 

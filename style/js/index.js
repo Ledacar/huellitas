@@ -1,9 +1,9 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 20){
-            $('.navbar').addClass("sticky");
+            $('.navbarr').addClass("sticky");
         }else{
-            $('.navbar').removeClass("sticky");
+            $('.navbarr').removeClass("sticky");
         }
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
@@ -19,13 +19,13 @@ $(document).ready(function(){
 
     /* Toggle menu */ 
     $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
+        $('.navbarr .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
     /* tryping word */
     var typed = new Typed(".typing", {
-        strings: ["citas reservadas", "Diagnosticamos problemas de salud", "Vacunamos contra enfermedades", "Tratamos heridas", "Establecemos fracturas"],
+        strings: ["", "Citas reservadas", "Diagnosticamos problemas de salud", "Vacunamos contra enfermedades", "Tratamos heridas", "Establecemos fracturas"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true 

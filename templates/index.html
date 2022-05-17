@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/style/img/Logo-sin texto.png">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/style/css/index.css">
     <link rel="stylesheet" href="/style/css/allpage.css">
-    <title>Portafolio Carlos</title>
+    <title>Huellitas | Inicio</title>
+    <!-- JS BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://kit.fontawesome.com/3e26a1e3ce.js" crossorigin="anonymous"></script>
@@ -19,7 +23,7 @@
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
-    <nav class="navbar">
+    <nav class="navbarr">
         <div class="max-width">
             <div class="logo">
               <a>Huelli<span>tas</span></a>           
@@ -27,8 +31,8 @@
             <ul class="menu">
                 <li><a href="#homes" class="menu-btn">Inicio</a></li>
                 <li><a href="#sobreMi" class="menu-btn">Acerca de nosotros</a></li>
-                <li><a href="#expe" class="menu-btn">Agendar cita</a></li>
-                <li><a href="#skill" class="menu-btn">Catalogo</a></li>
+                <li><a href="#expe" class="menu-btn">Catalogo</a></li>
+                <li><a href="#skill" class="menu-btn">Agendar cita</a></li>
                 <li><a href="#work" class="menu-btn">Contactanos</a></li>
             </ul>
             <div class="menu-btn">
@@ -55,16 +59,15 @@
             <div class="about-conten">
                 <div class="column left">
                     <img src="/style/img/Logo-sin texto.png" alt="">
-                    <!--<embed src="CV_Carlos_David_Tapia_Leiva.pdf" type="application/pdf" width="100%" height="600px" />!-->
                 </div>
                 <div class="column right">
                     <div class="text">Somo la veterinaria <span>huellitas</span></div>
                     <p>
-                      Para prevenir la introducción de enfermedades extranjeras, los veterinarios empleados por agencias gubernamentales ponen en cuarentena e inspeccionan animales traídos al país desde otros países. Supervisan los envíos de animales, evalúan la presencia de enfermedades y gestionan campañas para prevenir y erradicar muchas enfermedades como la tuberculosis, la brucelosis y la rabia, que amenazan la salud humana y animal.
+                        Para prevenir la introducción de enfermedades extranjeras, los veterinarios empleados por agencias gubernamentales ponen en cuarentena e inspeccionan animales traídos al país desde otros países. Supervisan los envíos de animales, evalúan la presencia de enfermedades y gestionan campañas para prevenir y erradicar muchas enfermedades como la tuberculosis, la brucelosis y la rabia, que amenazan la salud humana y animal.
 
-                      Un veterinario en investigación busca mejores formas de prevenir y resolver problemas de salud humana y animal. Muchos problemas, como el cáncer y las enfermedades del corazón, se estudian mediante el uso de animales de laboratorio, que se crían, crían y mantienen cuidadosamente bajo la supervisión de veterinarios.
+                        Un veterinario en investigación busca mejores formas de prevenir y resolver problemas de salud humana y animal. Muchos problemas, como el cáncer y las enfermedades del corazón, se estudian mediante el uso de animales de laboratorio, que se crían, crían y mantienen cuidadosamente bajo la supervisión de veterinarios.
                     </p>
-                    <a href="" download="" >Más información de que haces</a>
+                    <a href="" download="" >Más información</a>
                 </div>
             </div>
         </div>
@@ -73,173 +76,191 @@
     <!-- habilidades secction start  -->
     <section class="expe" id="expe">
         <div class="max-width">
-            <h1 class="tittle">Mi experiencia</h1>
-            <div class="expe-conten">
-                <div class="card">
-                    <div class="box">
-                        <i class="far fa-file-code"></i>
-                        <div class="text">Desarrollador web</div>
-                        <p>
-                            He tenido una alta experiencia desarrollando webs tanto estaticas como dinamicas,
-                            trabajando tanto en el fron end como en el back end. dichas son un poco complejas.
-                        </p>
-                    </div>
+            <h1 class="tittle">Catalogo</h1>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 </div>
-
-                <div class="card">
-                    <div class="box">
-                        <i class="fab fa-windows"></i>
-                        <div class="text">Programacion en aplicaciones de escritorio</div>
-                        <p>
-                            He trabajado tanto como en aplicaciones de escritorio de consola e interfaces graficas,
-                            estos programas han sido destinado a la facturación y contabilidad de empresas. para asi facilitarle
-                            a la empresa sus gestiones.
-                        </p>
-                    </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/style/img/banners/banner_huellitas.png" class="d-block w-100" alt="...">
                 </div>
-
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="text">Diseñador grafico</div>
-                        <p>
-                            Mi experiencia en este lado laboral ha sido poca haciendo logos para mis proyectos y logos
-                            para terceros.
-                        </p>
-                    </div>
+                <div class="carousel-item">
+                    <img src="/style/img/banners/banner huellitas blue.jpg" class="d-block w-100" alt="...">
                 </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
             </div>
+            <a href="" download="" >Descarga nuestro catalogo</a>
         </div>
     </section>
 
     <!-- slills secction start -->
     <section class="skill" id="skill">
+        <br>
+        <br>
         <div class="max-width">
-            <h1 class="tittle">Mis habilidades</h1>
             <div class="skill-content">
                 <div class="column left">
-                    <div class="text">Mis habilidades en el desarrollo de software.</div>
-                    <p>
-                        Mi experiencia en la programación ha sido completa como podra observar en los siguientes porcentajes.
-                        He estado en un curso de Harvard donde fui exelencia academica, en este curso vimos C, python con flask, sql y web.
-                        Tambien curso actualmente un curso de python avanzado en Tecnasa.
-                    </p>
                 </div>
                 <div class="column right">
-                    <div class="bar">
-                        <div class="info">
-                            <span>C</span>
-                            <span>80%</span>
+                    <div class="text">Agenda una cita en <span>Huellitas</span></div>
+                    <p class="fw-bold">
+                        Si deseas agendar una cita en nuesta clinica veterinaria puesdes hacer clik en el boton de abajo y ponerte en contacto con nostros para que disfrutes de la mejor clinica veterinaria del pais.
+                    </p>    
+                    <div class="button-area">
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Agendar cita">Agendar cita</button>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-dark" id="exampleModalLabel">Agenda una cita</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label text-dark">Nombre del paciente:</label>
+                                    <input type="text" class="form-control" id="message-text">                                    
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label text-dark">¿Que mascota/animal pasara consulta?</label>
+                                    <input type="text" class="form-control" id="message-text">                                    
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label text-dark">Edad:</label>
+                                    <input type="text" class="form-control" id="message-text">                                    
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label text-dark">Raza:</label>
+                                    <input type="text" class="form-control" id="message-text">                                    
+                                </div>
+                                <div class="mb-3">
+                                  <label for="message-text" class="col-form-label text-dark">Motivo de la cita:</label>
+                                  <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="recipient-name" class="col-form-label text-dark">Fecha de la cita:</label>
+                                  <input type="date" class="form-control" id="recipient-name">
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              <button type="button" class="btn btn-primary">Agendar cita</button>
+                            </div>
+                          </div>
                         </div>
-                        <div class="line c"></div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <span>C++</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line cc"></div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <span>C#</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="line cshap"></div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <span>Python</span>
-                            <span>90%</span>
-                            
-                        </div>
-                        <div class="line python"></div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <span>Django</span>
-                            <span>90%</span>                            
-                        </div>
-                        <div class="line django"></div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <span>Html</span>
-                            <span>90%</span>                            
-                        </div>
-                        <div class="line html"></div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>95%</span>                            
-                        </div>
-                        <div class="line css"></div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <span>JavaScript</span>
-                            <span>70%</span>    
-                        </div>
-                        <div class="line js"></div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <span>Sql</span>
-                            <span>95%</span>
-                           </div>
-                        <div class="line sql"></div>
-                    </div>
-                </div>
+                      </div>
+                </div>            
             </div>
-        </div>
+	    </div>
     </section>
     
     <!--  Trabajos secction star  -->
-    <section class="work" id="work">
+    <section class="contact" id="contact">
         <div class="max-width">
-            <h1 class="tittle">Mis proyectos</h1>
-            <div class="carsel owl-carousel">
-                <div class="card">
-                    <div class="box">
-                        <video src="/static/video/Ferreto2.mp4" autoplay loop muted></video>
-                        <div class="text">Ferreto</div>
-                        <p>
-                            Aplicacion de escritorio con interfaces graficas que esta destinado para la mejora
-                            de facturacion de una ferreteria, desde añadir productos nuevos hasta darles de baja 
-                            aplicacion completa y amigable con el usuario.
-                        </p>
+            <br>
+            <h2 class="text-center fw-bold">Contactanos</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Ponerse en contacto</div>
+                    <p>Puede contactar con nosotros por los siguientes medios:</p>
+                    <div class="icons">
+                        <div class="row">
+                            <div class="d-flex">
+                                <i class="fas fa-user"></i>
+                                <div class="info">
+                                    <div class="head">Nombre</div>
+                                    <div class="sub-title">Huellitas</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info">
+                                    <div class="head">Dirección</div>
+                                    <div class="sub-title">Managua, Altamira</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info">
+                                    <div class="head">Correos</div>
+                                    <div class="sub-title">huellitasacompany@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <video src="/static/png/2021-07-16 04-11-01.mkv" autoplay loop muted></video>
-                        <div class="text">Blueland</div>
-                        <p>
-                            Aplicacion web dedicada para facilitar a la hora de reservar hoteles, restaurantes,
-                            lugares turisticos y ayudar a que la experiencia turistica sea mucho mejor y mas 
-                            sencilla a la hora de hacer gestiones de reservas.
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <video src="/static/video/2021-07-18 04-13-04.mkv" autoplay loop muted></video>
-                        <div class="text">Daliz</div>
-                        <p>
-                            Programa de consola desarrollado en C#. Con fin de mejorar el rendimiento de ventas
-                            e ingreso de productos a una farmacia, puedes agregar productos desde su nombre, ID,
-                            precio y cantidad. tambien realiza facturas.
-                        </p>
-                    </div>
+                <div class="column right">
+                    <div class="text">Mensajeame</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Nombre" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Correo" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Sujeto" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Mensaje..." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button  type="submit">Enviar mensaje</button>
+                        </div>
+                        
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <!--  footer  -->
-    <footer>
-        <span>Creado por <a href="">Carlos Tapia</a> | <span class="far fa-copyright"></span> 2021 todos los derechos reservados.</span>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../style/img/Logo-sin texto.png" alt="Logo de huellitas">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Un poco más sobre nosotros</h2>
+                <p>Somos una compañia que nos dedicamos al trato de mascotas y animales desde el año 2010. Tratamos con los mejores veterinarios
+                    del pais, brindando un servicio de calidad y un trato especial para los mas queridos de la casa.
+                </p>
+            </div>
+            <div class="box">
+                <h2>Siguenos</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Huellitas S.A</b> - Todos los derechos reservados.</small>
+        </div>
     </footer>
     <script src="/style/js/index.js" ></script>
 
