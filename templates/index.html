@@ -17,6 +17,7 @@
     <script src="https://kit.fontawesome.com/3e26a1e3ce.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 <body>
@@ -57,10 +58,10 @@
         <div class="max-width">
             <h1 class="tittle">Acerca de nosotros</h1>
             <div class="about-conten">
-                <div class="column left">
+                <div class="column left" data-aos="fade-right">
                     <img src="/style/img/Logo-sin texto.png" alt="">
                 </div>
-                <div class="column right">
+                <div class="column right" data-aos="fade-left">
                     <div class="text">Somo la veterinaria <span>huellitas</span></div>
                     <p>
                         Para prevenir la introducción de enfermedades extranjeras, los veterinarios empleados por agencias gubernamentales ponen en cuarentena e inspeccionan animales traídos al país desde otros países. Supervisan los envíos de animales, evalúan la presencia de enfermedades y gestionan campañas para prevenir y erradicar muchas enfermedades como la tuberculosis, la brucelosis y la rabia, que amenazan la salud humana y animal.
@@ -75,7 +76,7 @@
 
     <!-- habilidades secction start  -->
     <section class="expe" id="expe">
-        <div class="max-width">
+        <div class="max-width" data-aos="fade-up">
             <h1 class="tittle">Catalogo</h1>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -109,9 +110,9 @@
         <br>
         <div class="max-width">
             <div class="skill-content">
-                <div class="column left">
+                <div class="column left "data-aos="fade-left">
                 </div>
-                <div class="column right">
+                <div class="column right" data-aos="fade-right">
                     <div class="text">Agenda una cita en <span>Huellitas</span></div>
                     <p class="fw-bold">
                         Si deseas agendar una cita en nuesta clinica veterinaria puesdes hacer clik en el boton de abajo y ponerte en contacto con nostros para que disfrutes de la mejor clinica veterinaria del pais.
@@ -170,9 +171,9 @@
     <section class="contact" id="contact">
         <div class="max-width">
             <br>
-            <h2 class="text-center fw-bold">Contactanos</h2>
+            <h2 class="text-center fw-bold overflow-hidden">Contactanos</h2>
             <div class="contact-content">
-                <div class="column left">
+                <div class="column left" data-aos="fade-right">
                     <div class="text">Ponerse en contacto</div>
                     <p>Puede contactar con nosotros por los siguientes medios:</p>
                     <div class="icons">
@@ -205,7 +206,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column right">
+                <div class="column right" data-aos="fade-left">
                     <div class="text">Mensajeame</div>
                     <form action="#">
                         <div class="fields">
@@ -219,7 +220,7 @@
                         <div class="field">
                             <input type="text" placeholder="Sujeto" required>
                         </div>
-                        <div class="field textarea">
+                        <div class="field textarea overflow-hidden">
                             <textarea cols="30" rows="10" placeholder="Mensaje..." required></textarea>
                         </div>
                         <div class="button-area">
@@ -233,13 +234,11 @@
     </section>
 
     <!--  footer  -->
-    <footer class="pie-pagina">
+    <footer class="pie-pagina" data-aos="fade-down">
         <div class="grupo-1">
             <div class="box">
-                <figure>
-                    <a href="#">
-                        <img src="../style/img/Logo-sin texto.png" alt="Logo de huellitas">
-                    </a>
+                <figure  class="overflow-hidden">
+                    <img src="../style/img/Logo-sin texto.png" alt="Logo de huellitas">
                 </figure>
             </div>
             <div class="box">
@@ -263,6 +262,10 @@
         </div>
     </footer>
     <script src="/style/js/index.js" ></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

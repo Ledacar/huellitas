@@ -1,4 +1,21 @@
 @charset "UTF-8";
+@-webkit-keyframes entradaanim {
+  from {
+    right: 50%;
+  }
+  to {
+    right: 0%;
+  }
+}
+@keyframes entradaanim {
+  from {
+    right: 50%;
+  }
+  to {
+    right: 0%;
+  }
+}
+
 .custom-shape-divider-top-1647358628 {
   position: absolute;
   top: 0;
@@ -33,6 +50,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none !important;
+  overflow-x: hidden;
 }
 
 html {
@@ -47,6 +65,13 @@ html {
 
 /* nav style */
 .navbarr {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   top: -10px;
   position: fixed;
   width: 100%;
@@ -123,6 +148,13 @@ html {
 
 /* meno btn */
 .menu-btn {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   color: #fff;
   font-size: 23px;
   cursor: pointer;
@@ -134,23 +166,31 @@ html {
 }
 
 .scroll-up-btn {
+  overflow-y: hidden;
   position: fixed;
-  height: 45px;
+  height: 35px;
   width: 42px;
   background: #0B0C1B;
   left: 30px;
   bottom: 10px;
-  text-align: center;
+  text-align: center !important;
   line-height: 45px;
   color: #fff;
   z-index: 9999;
   font-size: 30px;
-  border-radius: 6px;
+  border-radius: 25px;
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.scroll-up-btn:hover {
+  overflow-y: hidden;
+  background: none;
+  border: 1px solid #0B0C1B;
+  color: #2FAC66;
 }
 
 .scroll-up-btn.show {
@@ -175,21 +215,49 @@ html {
 }
 
 .home .home-conten .text-1 {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   font-size: 27px;
 }
 
 .home .home-conten .text-2 {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
 }
 
 .home .home-conten .text-3 {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   font-size: 40px;
   margin: 5px 0;
 }
 
 .home .home-conten .text-3 span {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   color: #2FAC66;
   font-weight: 500;
 }
@@ -458,15 +526,36 @@ section .about-conten,
 }
 
 .contact .contact-content .left p {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   text-align: justify;
   color: #fff;
 }
 
 .contact .contact-content .left .icons {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   margin: 10px 0;
 }
 
 .contact .contact-content .row {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,23 +566,58 @@ section .about-conten,
 }
 
 .contact .contact-content .row .info {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   margin-left: 30px;
 }
 
 .contact .contact-content .row i {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   font-size: 25px;
   color: #2FAC66;
 }
 
 .contact .contact-content .info .head {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   font-weight: 500;
 }
 
 .contact .contact-content .info .sub-title {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   color: #fff;
 }
 
 .contact .right form .fields {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,22 +625,50 @@ section .about-conten,
 
 .contact .right form .field,
 .contact .right form .fields .field {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   height: 45px;
   width: 100%;
   margin-bottom: 15px;
 }
 
 .contact .right form .textarea {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   height: 80px;
   width: 100%;
 }
 
 .contact .right form .name {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   margin-right: 10px;
 }
 
 .contact .right form .field input,
 .contact .right form .textarea textarea {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   height: 100%;
   width: 100%;
   border: 1px solid #fff;
@@ -532,14 +684,35 @@ section .about-conten,
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus {
   border-color: #b3b3b3;
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .contact .right form .textarea textarea {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   padding-top: 10px;
   resize: none;
 }
 
 .contact .right form .button-area {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,6 +722,13 @@ section .about-conten,
 }
 
 .right form .button-area button {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   color: #fff;
   display: block;
   width: 160px !important;
@@ -573,15 +753,37 @@ section .about-conten,
 
 /* footer */
 .pie-pagina {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   width: 100%;
   background-color: #222;
+  animation-name: entradaanim;
 }
 
 .pie-pagina .grupo-1 h2 {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   color: #2FAC66 !important;
 }
 
 .pie-pagina .grupo-1 {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -594,6 +796,13 @@ section .about-conten,
 }
 
 .pie-pagina .grupo-1 .box figure {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -608,21 +817,50 @@ section .about-conten,
 }
 
 .pie-pagina .grupo-1 .box figure img {
+  overflow-y: hidden !important;
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   width: 200px;
 }
 
 .pie-pagina .grupo-1 .box h2 {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   color: #fff;
   margin-bottom: 25px;
   font-size: 20px;
 }
 
 .pie-pagina .grupo-1 .box p {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   color: #fff;
   margin-bottom: 10px;
 }
 
 .pie-pagina .grupo-1 .red-social a {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   display: inline-block;
   text-decoration: none;
   width: 45px;
@@ -638,10 +876,24 @@ section .about-conten,
 }
 
 .pie-pagina .grupo-1 .red-social a:hover {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   color: #2FAC66;
 }
 
 .pie-pagina .grupo-2 {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   background-color: #333333;
   padding: 15px 10px;
   text-align: center;
@@ -649,10 +901,24 @@ section .about-conten,
 }
 
 .pie-pagina .grupo-2 b {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   font-weight: 500;
 }
 
 .pie-pagina .grupo-2 small {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   font-size: 15px;
 }
 
