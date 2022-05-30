@@ -99,14 +99,13 @@ html{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
+    transition: all 0.5s ease;
+}
+.navbarr .logo a:hover{
+    color: #fff;
 }
 
 .navbarr .logo a span:hover{
-    color: $verdelogo;
-}
-
-.navbarr.sticky .logo a span:hover{
-    transition: all 0.5s ease;
     color: $verdelogo;
 }
 
@@ -121,6 +120,13 @@ html{
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    margin-top: 25px;
+    transition: color 0.3s ease;
+    transition: all 0.5s ease;
+}
+
+.navbarr .menu li a .sticky{
+    margin-top: 15px;
     transition: color 0.3s ease;
     transition: all 0.5s ease;
 }
@@ -238,6 +244,7 @@ section{
 }
 
 section .tittle{
+    overflow-y: hidden;
     position: relative;
     text-align: center;
     font-size: 50px;
@@ -249,7 +256,7 @@ section .tittle{
 section .tittle::before{
     content: "";
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
     left: 50%;
     width: 190px;
     height: 3px;
@@ -259,7 +266,7 @@ section .tittle::before{
 
 section .tittle::after{
     position: absolute;
-    bottom: -12px;
+    bottom: -7px;
     left: 50%;
     font-size: 20px;
     color: $verdelogo;
@@ -269,7 +276,7 @@ section .tittle::after{
 }
 
 .about .tittle::after{
-    content: "Quienes somos";
+    content: "¿Quienes somos?";
 }
 
 section .about-conten,
@@ -652,6 +659,9 @@ section .about-conten,
     grid-gap:50px;
     padding: 45px 0px;
 }
+.pie-pagina .box{
+    overflow-y: hidden !important;
+}
 .pie-pagina .grupo-1 .box figure{
     position: relative;
     animation-name: entradaanim;
@@ -763,8 +773,8 @@ section .about-conten,
         display: block;
         z-index: 999;
     }
-
-    .menu-btn i.active::before{
+    
+    .menu-btn .menus i.active::before{
         content: "\f00d";
     }
 
@@ -777,7 +787,7 @@ section .about-conten,
         background: #222;
         border-radius: 0 0  0 20%;
         text-align: center;
-        padding-top: 15px;
+        padding-top: 18px;
         transition: all 0.5s ease;
     }
 
@@ -791,8 +801,8 @@ section .about-conten,
 
     .navbarr .menu li a{
         display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
+        margin: 10px 0;
+        font-size: 15px;
     }
 
     .home .home-conten .text-2{
@@ -815,6 +825,10 @@ section .about-conten,
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
+        img{
+            width: 250px;
+            height: 250px;
+        }
     }
 
     .about .about-conten .right{
@@ -844,6 +858,9 @@ section .about-conten,
         grid-template-columns: repeat(1, 1fr);
         grid-gap:30px;
         padding: 35px 0px;
+    }
+    .pie-pagina .box{
+        overflow-y: hidden;
     }
 
 }
