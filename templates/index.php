@@ -35,7 +35,7 @@
                 <li><a href="#expe" class="menu-btn">Catalogo</a></li>
                 <li><a href="#skill" class="menu-btn">Agendar cita</a></li>
                 <li><a href="#work" class="menu-btn">Contactanos</a></li>
-                <li><a href="gestiondecuentas.html" class="menu-btn">Gestion de cuenta</a></li>
+                <li><a href="gestiondecuentas.php" class="menu-btn">Gestion de cuenta</a></li>
             </ul>
             <div class="menu-btn menus">
                 <i class="fas fa-bars"></i>

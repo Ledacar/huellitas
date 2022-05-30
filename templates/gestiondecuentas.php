@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="retornar">
-        <a href="index.html"><i class="fas fa-angle-left">  Regresar</i></a>
+        <a href="index.php"><i class="fas fa-angle-left">  Regresar</i></a>
     </div>
         <main>
             <div class="contenedor__todo">
