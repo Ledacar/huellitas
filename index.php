@@ -30,14 +30,13 @@
               <a>Huelli<span>tas</span></a>           
             </div>
             <ul class="menu">
-                <li><a href="#homes" class="menu-btn">Inicio</a></li>
                 <li><a href="#sobreMi" class="menu-btn">Acerca de nosotros</a></li>
                 <li><a href="#expe" class="menu-btn">Catalogo</a></li>
                 <li><a href="#skill" class="menu-btn">Agendar cita</a></li>
                 <li><a href="#work" class="menu-btn">Contactanos</a></li>
-                <li><a href="gestiondecuentas.php" class="menu-btn">Gestion de cuenta</a></li>
+                <li><a href="gestiondecuentas.php" class="menu-btn">Gestión de cuenta</a></li>
             </ul>
-            <div class="menu-btn menus">
+            <div class="menu-btn menu">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
@@ -49,7 +48,7 @@
             <div class="home-conten">
                 <div class="text-1">Veterinaria</div>
                 <div class="text-2">Huellitas</div>
-                <div class="text-3">Presta los servicio de <span class="typing">Citas reservadas</span></div>
+                <div class="text-3">Nos especializamos en <span class="typing">Dar lo mejor para tu mascota</span></div>
             </div>
         </div>
     </section>
@@ -69,7 +68,7 @@
 
                         Un veterinario en investigación busca mejores formas de prevenir y resolver problemas de salud humana y animal. Muchos problemas, como el cáncer y las enfermedades del corazón, se estudian mediante el uso de animales de laboratorio, que se crían, crían y mantienen cuidadosamente bajo la supervisión de veterinarios.
                     </p>
-                    <a href="" >Más información</a>
+                    <a href="/masinfo.php" >Más información</a>
                 </div>
             </div>
         </div>

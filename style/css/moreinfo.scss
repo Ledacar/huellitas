@@ -1,0 +1,15 @@
+$azullogo:#0B0C1B;
+$verdelogo:#2FAC66;
+$textwhite: #fff;
+$bg: #040509;
+$backgroundresponsive : #222;
+$colorfootermini: #333333;
+
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1647358628 svg {
+        width: calc(161% + 1.3px);
+        height: 500px;
+    }
+}

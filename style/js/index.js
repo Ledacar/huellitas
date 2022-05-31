@@ -25,7 +25,7 @@ $(document).ready(function(){
 
     /* tryping word */
     var typed = new Typed(".typing", {
-        strings: ["", "Citas reservadas", "Diagnosticamos problemas de salud", "Vacunamos contra enfermedades", "Tratamos heridas", "Establecemos fracturas"],
+        strings: ["", "Dar lo mejor para tu mascota", "Diagnosticar para problemas de salud", "Vacunar contra enfermedades", "Tratar heridas", "Realizar examenes", "etc..."],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true 
