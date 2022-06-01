@@ -33,7 +33,7 @@
                 <li><a href="#sobreMi" class="menu-btn">Acerca de nosotros</a></li>
                 <li><a href="#expe" class="menu-btn">Catalogo</a></li>
                 <li><a href="#skill" class="menu-btn">Agendar cita</a></li>
-                <li><a href="#work" class="menu-btn">Contactanos</a></li>
+                <li><a href="#contact" class="menu-btn">Contactanos</a></li>
                 <li><a href="gestiondecuentas.php" class="menu-btn">Gestión de cuenta</a></li>
             </ul>
             <div class="menu-btn menu">
