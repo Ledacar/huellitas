@@ -75,7 +75,7 @@
                                 <h2 class="name">Ashly Ramos</h2>
                                 <p class="description">Encanrgada de todos nuestros cachorros, experiencia con nostros, mas de 5 años. una de las mejores veterinaria de nuestra clinica.</p>
     
-                                <a href="https://www.instagram.com/yarainsty/" class="button">Mirar más</a>
+                                <a href="https://www.instagram.com/yarainsty/" target="_blank" class="button">Mirar más</a>
                             </div>
                         </div>
                         <div class="card swiper-slide">
@@ -91,7 +91,7 @@
                                 <h2 class="name">Gabriela Valverde</h2>
                                 <p class="description">La mejor y con mayor experiencia con tus gatos, con más de 7 años dando el mejor servicio para tus gatos.</p>
     
-                                <a href="https://www.instagram.com/gabb_v_/" class="button">Mirar más</a>
+                                <a href="https://www.instagram.com/gabb_v_/" target="_blank" class="button">Mirar más</a>
                             </div>
                         </div>
                         <div class="card swiper-slide">
@@ -107,7 +107,7 @@
                                 <h2 class="name">Josias Nicaragua</h2>
                                 <p class="description">De los más antiguos laborando con nosotros, se especializa en los cachorros y perro adultos, sin duda el mejor.</p>
     
-                                <a href="https://www.instagram.com/josias_nicaragua/" class="button">Mirar más</button>
+                                <a href="https://www.instagram.com/josias_nicaragua/" target="_blank" class="button">Mirar más</a>
                             </div>
                         </div>
                         <div class="card swiper-slide">
@@ -123,7 +123,7 @@
                                 <h2 class="name">Nayely Martinica</h2>
                                 <p class="description">Nuestras aves psitaciformes se sentiran seguras con la mejor en su rama, con experiencia de 6 años.</p>
     
-                                <a href="https://www.instagram.com/martinica_03/" class="button">Mirar más</a>
+                                <a href="https://www.instagram.com/martinica_03/" target="_blank" class="button">Mirar más</a>
                             </div>
                         </div>
                         <div class="card swiper-slide">
@@ -139,7 +139,7 @@
                                 <h2 class="name">Ricardo Rodriguez</h2>
                                 <p class="description">El mejor en aves gregarias, trabajando con nosotros desde hace 3 años, demostrando siempre lo mejor.</p>
     
-                                <a href="https://www.instagram.com/rodriquez8671/" class="button">Mirar más</a>
+                                <a href="https://www.instagram.com/rodriquez8671/" target="_blank" class="button">Mirar más</a>
                             </div>
                         </div>
                     </div>
