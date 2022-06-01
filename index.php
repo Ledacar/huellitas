@@ -62,7 +62,7 @@
                     <img src="/style/img/Logo-sin texto.png" alt="">
                 </div>
                 <div class="column right" data-aos="fade-left">
-                    <div class="text">Somo la veterinaria <span>huellitas</span></div>
+                    <div class="text">Somos la veterinaria <span>huellitas</span></div>
                     <p>
                         Para prevenir la introducción de enfermedades extranjeras, los veterinarios empleados por agencias gubernamentales ponen en cuarentena e inspeccionan animales traídos al país desde otros países. Supervisan los envíos de animales, evalúan la presencia de enfermedades y gestionan campañas para prevenir y erradicar muchas enfermedades como la tuberculosis, la brucelosis y la rabia, que amenazan la salud humana y animal.
 

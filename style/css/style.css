@@ -1,7 +1,208 @@
-.personal {
+@charset "UTF-8";
+* {
+  justify-items: center;
+  text-decoration: none !important;
+  text-align: center;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1647358628 svg {
+    width: calc(161% + 1.3px);
+    height: 500px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+/* nav style */
+.navbarr {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  top: -10px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 20px 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbarr .max-width {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbarr .logo a {
+  color: #0B0C1B !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333333;
+  font-size: 35px;
+  font-weight: 600;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbarr .logo a:hover {
+  color: #0B0C1B;
+}
+
+.navbarr .logo a span:hover {
+  color: #2FAC66;
+}
+
+.navbarr.sticky .logo a span:hover {
+  color: #fff;
+}
+
+.navbarr .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbarr .menu li a {
+  display: block;
+  color: #0B0C1B;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbarr .menu li a.sticky {
+  margin-top: 15px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #fff;
+}
+
+.navbarr .menu li a:hover {
+  color: #2FAC66;
+  font-size: 20px;
+}
+
+.navbarr.sticky .menu li a :hover {
+  color: #fff !important;
+}
+
+.navbarr.sticky .menu li a:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.navbarr.sticky {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  padding: 10px 0;
+  background: #2FAC66;
+}
+
+/* meno btn */
+.menu-btn {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-btn:hover {
+  color: #2FAC66;
+}
+
+.scroll-up-btn {
+  overflow-y: hidden;
+  position: fixed;
+  height: 35px;
+  width: 42px;
+  background: #0B0C1B;
+  left: 30px;
+  bottom: 10px;
+  text-align: center !important;
+  line-height: 45px;
+  color: #fff;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.scroll-up-btn:hover {
+  overflow-y: hidden;
+  background: none;
+  border: 1px solid #0B0C1B;
+  color: #2FAC66;
+}
+
+.scroll-up-btn.show {
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.info-text {
+  color: #040509;
+}
+
+.personal-text {
+  font-size: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.personal-text span {
+  color: #2FAC66;
+}
+
+.personal {
+  background: #040509;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -11,6 +212,9 @@
 }
 
 .personal .slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 1120px;
   width: 100%;
   padding: 40px 0;
@@ -99,6 +303,7 @@
 }
 
 .personal .description {
+  margin-top: 10px;
   font-size: 14px;
   color: #707070;
   text-align: center;
@@ -151,6 +356,423 @@
 
 .personal .swiper-pagination-bullet-active {
   background-color: #2FAC66;
+}
+
+/* aboutme start */
+section {
+  padding: 100px 0;
+}
+
+section .tittle {
+  overflow-y: hidden;
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+section .tittle::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 190px;
+  height: 3px;
+  background: #000;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+section .tittle::after {
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  font-size: 20px;
+  color: #2FAC66;
+  padding: 5px;
+  background: #fff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.about .tittle::after {
+  content: "Más sobre nosotros";
+}
+
+section .about-conten,
+.expe .expe-conten,
+.skill .skill-content,
+.contact .contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .about-conten .left img {
+  height: 300px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+.about .about-conten .right {
+  width: 50%;
+}
+
+.about .about-conten .right .text {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.about .about-conten .right .text span {
+  color: #2FAC66;
+}
+
+.about .about-conten .right p {
+  text-align: justify;
+}
+
+.about .about-conten .right a {
+  display: inline-block;
+  background: #2FAC66;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid #2FAC66;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.about .about-conten .right a:hover {
+  color: #2FAC66;
+  background: none;
+}
+
+/* footer */
+.pie-pagina {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  width: 100%;
+  background-color: #222;
+  animation-name: entradaanim;
+}
+
+.pie-pagina .grupo-1 h2 {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  color: #2FAC66 !important;
+}
+
+.pie-pagina .grupo-1 {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .box {
+  overflow-y: hidden !important;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+  overflow-y: hidden !important;
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  width: 200px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #040509;
+  text-align: center;
+  border-radius: 25px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  color: #2FAC66;
+}
+
+.pie-pagina .grupo-2 {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-color: #333333;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.pie-pagina .grupo-2 b {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  font-weight: 500;
+}
+
+.pie-pagina .grupo-2 small {
+  position: relative;
+  -webkit-animation-name: entradaanim;
+          animation-name: entradaanim;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  font-size: 15px;
+}
+
+/* responsive style */
+@media (max-width: 1300px) {
+  .home .max-width {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1104px) {
+  .about .about-conten .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 947px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn .menus i.active::before {
+    content: "\f00d";
+  }
+  .navbarr .menu {
+    position: fixed;
+    height: auto;
+    width: 100%;
+    top: 0;
+    right: -100%;
+    background: #222;
+    border-radius: 0 0  0 20%;
+    text-align: center;
+    padding-top: 18px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .navbarr .menu.active {
+    right: 0;
+  }
+  .navbarr .menu li {
+    display: block;
+  }
+  .navbarr .menu li a {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  .home .home-conten .text-2 {
+    font-size: 70px;
+  }
+  .home .home-conten .text-3 {
+    font-size: 35px;
+  }
+  .max-width {
+    max-width: 800px;
+  }
+  .about .about-conten .column {
+    width: 100%;
+  }
+  .about .about-conten .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .about .about-conten .left img {
+    width: 250px;
+    height: 250px;
+  }
+  .about .about-conten .right {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+  .expe .expe-conten .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  .expe a {
+    margin-left: 15px !important;
+  }
+  .skill .skill-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .pie-pagina .box {
+    overflow-y: hidden;
+  }
+}
+
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 23px;
+  }
+  .home .home-conten .text-2 {
+    font-size: 60px;
+  }
+  .home .home-conten .text-3 {
+    font-size: 32px;
+  }
+  .expe .expe-conten .card,
+  .skill .skill-content .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .max-width {
+    padding: 0 23px;
+  }
+  .home .home-conten .text-2 {
+    font-size: 50px;
+  }
+  .home .home-conten .text-3 {
+    font-size: 27px;
+  }
 }
 
 @media screen and (max-width: 768px) {
