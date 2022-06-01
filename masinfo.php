@@ -75,7 +75,7 @@
                                 <h2 class="name">Ashly Ramos</h2>
                                 <p class="description">Encanrgada de todos nuestros cachorros, experiencia con nostros, mas de 5 años. una de las mejores veterinaria de nuestra clinica.</p>
     
-                                <a href="https://www.instagram.com/yarainsty/" class="button">Mirar más</a>
+                                <button href="https://www.instagram.com/yarainsty/" class="button">Mirar más</button>
                             </div>
                         </div>
                         <div class="card swiper-slide">
@@ -91,7 +91,7 @@
                                 <h2 class="name">Gabriela Valverde</h2>
                                 <p class="description">La mejor y con mayor experiencia con tus gatos, con más de 7 años dando el mejor servicio para tus gatos.</p>
     
-                                <a href="https://www.instagram.com/gabb_v_/" class="button">Mirar más</button>
+                                <button href="https://www.instagram.com/gabb_v_/" class="button">Mirar más</button>
                             </div>
                         </div>
                         <div class="card swiper-slide">
@@ -107,7 +107,7 @@
                                 <h2 class="name">Josias Nicaragua</h2>
                                 <p class="description">De los más antiguos laborando con nosotros, se especializa en los cachorros y perro adultos, sin duda el mejor.</p>
     
-                                <a href="https://www.instagram.com/josias_nicaragua/" class="button">Mirar más</button>
+                                <button href="https://www.instagram.com/josias_nicaragua/" class="button">Mirar más</button>
                             </div>
                         </div>
                         <div class="card swiper-slide">
