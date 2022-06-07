@@ -5,6 +5,7 @@
   padding: 0;
   -webkit-transition: all 0.5 ease;
   transition: all 0.5 ease;
+  cursor: url(https://cdn.pixabay.com/photo/2014/04/02/14/08/paws-306277_640.png), auto;
 }
 
 .navbar {
