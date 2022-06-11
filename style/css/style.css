@@ -58,7 +58,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #333333;
   font-size: 35px;
   font-weight: 600;
   -webkit-transition: all 0.5s ease;
@@ -137,7 +136,7 @@ html {
           animation-duration: 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  color: #fff;
+  color: #0B0C1B;
   font-size: 23px;
   cursor: pointer;
   display: none;
@@ -663,7 +662,7 @@ section .about-conten,
     display: block;
     z-index: 999;
   }
-  .menu-btn .menus i.active::before {
+  .menu-btn i.active::before {
     content: "\f00d";
   }
   .navbarr .menu {
@@ -689,6 +688,10 @@ section .about-conten,
     display: inline-block;
     margin: 10px 0;
     font-size: 15px;
+    color: #fff;
+  }
+  .navbarr .menu li a:hover {
+    color: #2FAC66 !important;
   }
   .home .home-conten .text-2 {
     font-size: 70px;

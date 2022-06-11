@@ -54,7 +54,6 @@ html{
 .navbarr .logo a{
   color: $azullogo !important;
     align-items: center;
-    color: $colorfootermini;
     font-size: 35px;
     font-weight: 600;
     transition: all 0.5s ease;
@@ -93,6 +92,7 @@ html{
     color: $textwhite;
 }
 
+
 .navbarr .menu li a:hover{
     color: $verdelogo;
     font-size: 20px;
@@ -121,7 +121,7 @@ html{
     animation-name: entradaanim;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    color: #fff;
+    color: $azullogo;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -537,7 +537,7 @@ section .about-conten,
       z-index: 999;
   }
   
-  .menu-btn .menus i.active::before{
+  .menu-btn  i.active::before{
       content: "\f00d";
   }
 
@@ -566,6 +566,11 @@ section .about-conten,
       display: inline-block;
       margin: 10px 0;
       font-size: 15px;
+      color: $textwhite;
+  }
+
+  .navbarr .menu li a:hover{
+    color: $verdelogo !important;
   }
 
   .home .home-conten .text-2{

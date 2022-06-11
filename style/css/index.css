@@ -65,13 +65,6 @@ html {
 
 /* nav style */
 .navbarr {
-  position: relative;
-  -webkit-animation-name: entradaanim;
-          animation-name: entradaanim;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   top: -10px;
   position: fixed;
   width: 100%;
@@ -157,13 +150,6 @@ html {
 
 /* meno btn */
 .menu-btn {
-  position: relative;
-  -webkit-animation-name: entradaanim;
-          animation-name: entradaanim;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   color: #fff;
   font-size: 23px;
   cursor: pointer;
@@ -961,7 +947,7 @@ section .about-conten,
     display: block;
     z-index: 999;
   }
-  .menu-btn .menus i.active::before {
+  .menu-btn i.active::before {
     content: "\f00d";
   }
   .navbarr .menu {
