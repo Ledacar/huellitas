@@ -107,7 +107,7 @@
                                 <h2 class="name">Josias Nicaragua</h2>
                                 <p class="description">De los más antiguos laborando con nosotros, se especializa en los cachorros y perro adultos, sin duda el mejor.</p>
                                 
-                                <a style="cursor: pointer;" target="_blank" id="jos" class="button">Mirar más</a>
+                                <a style="cursor: pointer;"  id="jos" class="button">Mirar más</a>
                             </div>
                         </div>
                         <div class="card swiper-slide">
@@ -123,7 +123,7 @@
                                 <h2 class="name">Nayely Martinica</h2>
                                 <p class="description">Nuestras aves psitaciformes se sentiran seguras con la mejor en su rama, con experiencia de 6 años.</p>
                                 
-                                <a style="cursor: pointer;" target="_blank" id="na" class="button">Mirar más</a>
+                                <a style="cursor: pointer;"  id="na" class="button">Mirar más</a>
                             </div>
                         </div>
                         <div class="card swiper-slide">
@@ -138,7 +138,7 @@
                             <div class="card-content">
                                 <h2 class="name">Ricardo Rodriguez</h2>
                                 <p class="description">El mejor en aves gregarias, trabajando con nosotros desde hace 3 años, demostrando siempre lo mejor.</p>
-                                <a style="cursor: pointer;" target="_blank" id="ric" class="button">Mirar más</a>
+                                <a style="cursor: pointer;"  id="ric" class="button">Mirar más</a>
                             </div>
                         </div>
                     </div>
