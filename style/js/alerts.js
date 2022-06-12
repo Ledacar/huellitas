@@ -84,7 +84,7 @@ Swal.fire({
         title: '<strong>Ricarto <u>Rodriguez</u></strong>',
         icon: 'info',
         html:
-          'Hola, soy Ashly me gusta mucho 1D XD Y NO SE QUE MAS PONER JAJA <b>Siempre a la disposición de tu mascota.</b> ' +
+          'Hola soy Ricardo, veterinario de huellitas, soy amante a los animales, me gusta el futbol, videos juegos y salir en los ratos libres. <b>Jamas descuidaria a una mascota.</b> ' +
           '<a style="cursor: pointer;" href="https://www.instagram.com/rodriquez8671/">Instagram</a> ',
         showCloseButton: true,
         showCancelButton: true,
