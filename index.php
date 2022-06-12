@@ -250,8 +250,8 @@
             <div class="box">
                 <h2>Siguenos</h2>
                 <div class="red-social">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100082353603268" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/huellitas_sa/" target="_blank"  class="fa fa-instagram"></a>
                     <a href="#" class="fa fa-twitter"></a>
                     <a href="#" class="fa fa-youtube"></a>
                 </div>
