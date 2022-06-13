@@ -225,7 +225,7 @@ function validarFechaMenorActual(date){
   // ====== Validacion recat 
 
   function onSubmit(token) {
-    document.getElementById("mens").submit();
+    document.getElementById("aa").submit();
   }
 
   function onSubmit(token) {

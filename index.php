@@ -128,7 +128,7 @@
                               <h5 class="modal-title text-dark" id="exampleModalLabel">Agenda una cita</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <form onsubmit="veri_session(event)" id="mens" name="formu">
+                            <form onsubmit="veri_session(event)" id="aa" name="formu">
                                 <div class="modal-body">
                                     <div class="mb-3">
                                         <label for="message-text" class="col-form-label text-dark">Nombre del paciente:</label>
