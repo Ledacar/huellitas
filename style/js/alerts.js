@@ -182,7 +182,6 @@ function validarFechaMenorActual(date){
     var motivo = document.getElementById('motivo').value = '';
     var fecha = document.getElementById('fecha').value = '';
     }
-    document.getElementById("aa").submit();
   }
 
     const veri_correo = (event) => {
@@ -218,7 +217,6 @@ function validarFechaMenorActual(date){
       var sujeto = document.getElementById('sujeto').value = '';
       var mensaje = document.getElementById('mensaje').value = '';
       }
-      document.getElementById("mens").submit();
   }
 
 
