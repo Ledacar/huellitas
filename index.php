@@ -120,7 +120,7 @@
                     <div class="button-area">
                         <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Agendar cita">Agendar cita</button>
                     </div>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade was-validated" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
@@ -151,7 +151,7 @@
                                     </div>
                                     <div class="mb-3">
                                     <label for="recipient-name" class="col-form-label text-dark">Fecha de la cita:</label>
-                                    <input type="date" id="fecha" class="form-control" id="recipient-name" >
+                                    <input type="date" id="fecha" class="form-control" value="" id="recipient-name" >
                                     </div>
                                 </div>
                                 <div class="modal-footer">

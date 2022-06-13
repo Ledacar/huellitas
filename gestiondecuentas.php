@@ -48,10 +48,10 @@
                     <!--Register-->
                     <form action="" id="registro" class="formulario__register">
                         <h2>Regístrarse</h2>
-                        <input type="text" placeholder="Nombre completo">
-                        <input type="email" placeholder="Correo Electronico">
-                        <input type="text" placeholder="Usuario">
-                        <input type="password" placeholder="Contraseña">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre completo">
+                        <input type="email" name="correo" id="correo" placeholder="Correo">
+                        <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+                        <input type="password" name="pass" id="pass" placeholder="Contraseña">
                         <button class="g-recaptcha" 
                         data-sitekey="6LcffmIgAAAAAJMhQpr6F2SHYDgjkXiDAPxlo_sn" 
                         data-callback='onSubmitt' 
