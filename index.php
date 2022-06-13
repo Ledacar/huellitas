@@ -12,6 +12,7 @@
     <title>Huellitas | Inicio</title>
     <!-- JS BOOSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://kit.fontawesome.com/3e26a1e3ce.js" crossorigin="anonymous"></script>
@@ -127,39 +128,42 @@
                               <h5 class="modal-title text-dark" id="exampleModalLabel">Agenda una cita</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
-                              <form>
-                                <div class="mb-3">
-                                    <label for="message-text" class="col-form-label text-dark">Nombre del paciente:</label>
-                                    <input type="text" class="form-control" id="message-text">                                    
+                            <form onsubmit="veri_session(event)" id="mens" name="formu">
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label text-dark">Nombre del paciente:</label>
+                                        <input type="text" id="nombrepa" class="form-control" id="message-text" required>                                    
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label text-dark">¿Que mascota/animal pasara consulta?</label>
+                                        <input type="text" id="mascota" class="form-control" id="message-text" required>                                    
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label text-dark">Edad:</label>
+                                        <input type="number" id="edad" min="0" class="form-control" id="message-text" required>                                    
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label text-dark">Raza:</label>
+                                        <input type="text" id="raza" class="form-control" id="message-text" required>                                    
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="message-text" class="col-form-label text-dark">Motivo de la cita:</label>
+                                    <textarea class="form-control" id="motivo"  id="message-text" required></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label text-dark">Fecha de la cita:</label>
+                                    <input type="date" id="fecha" class="form-control" id="recipient-name" >
+                                    </div>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="message-text" class="col-form-label text-dark">¿Que mascota/animal pasara consulta?</label>
-                                    <input type="text" class="form-control" id="message-text">                                    
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <input type="submit" 
+                                    data-sitekey="6LdT-mQgAAAAAGJmWLLj9opGqRvSuEss0uCRbA13" 
+                                    data-callback='onSubmit' 
+                                    data-action='submit' name="btnlogin" id="btnlogin"  class="btn btn-primary g-recaptcha" value="Agendar cita">
                                 </div>
-                                <div class="mb-3">
-                                    <label for="message-text" class="col-form-label text-dark">Edad:</label>
-                                    <input type="text" class="form-control" id="message-text">                                    
-                                </div>
-                                <div class="mb-3">
-                                    <label for="message-text" class="col-form-label text-dark">Raza:</label>
-                                    <input type="text" class="form-control" id="message-text">                                    
-                                </div>
-                                <div class="mb-3">
-                                  <label for="message-text" class="col-form-label text-dark">Motivo de la cita:</label>
-                                  <textarea class="form-control" id="message-text"></textarea>
-                                </div>
-                                <div class="mb-3">
-                                  <label for="recipient-name" class="col-form-label text-dark">Fecha de la cita:</label>
-                                  <input type="date" class="form-control" id="recipient-name">
-                                </div>
-                              </form>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                              <button type="button" class="btn btn-primary">Agendar cita</button>
-                            </div>
-                          </div>
+                            </form>
+                        </div>
                         </div>
                       </div>
                 </div>            
@@ -208,23 +212,26 @@
                 </div>
                 <div class="column right" data-aos="fade-left">
                     <div class="text">Mensajeame</div>
-                    <form action="#">
+                    <form onsubmit="veri_correo(event)" id="mens" name="formu">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Nombre" required>
+                                <input type="text" id="nombre" placeholder="Nombre" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Correo" required>
+                                <input type="" id="correo" placeholder="Correo" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Sujeto" required>
+                            <input type="text" id="sujeto" placeholder="Sujeto" required>
                         </div>
                         <div class="field textarea overflow-hidden">
-                            <textarea cols="30" rows="10" placeholder="Mensaje..." required></textarea>
+                            <textarea cols="30" rows="10" id="mensaje" placeholder="Mensaje..." required></textarea>
                         </div>
                         <div class="button-area">
-                            <button  type="submit">Enviar mensaje</button>
+                            <button class="g-recaptcha" 
+                            data-sitekey="6LdT-mQgAAAAAGJmWLLj9opGqRvSuEss0uCRbA13" 
+                            data-callback='onSubmit' 
+                            data-action='submit'  type="submit">Enviar mensaje</button>
                         </div>
                         
                     </form>
@@ -267,5 +274,7 @@
     <script>
     AOS.init();
     </script>
+    <script src="./style/js/alerts.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
