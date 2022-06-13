@@ -157,10 +157,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                    <input type="submit" 
-                                    data-sitekey="6LdT-mQgAAAAAGJmWLLj9opGqRvSuEss0uCRbA13" 
-                                    data-callback='onSubmit' 
-                                    data-action='submit' name="btnlogin" id="btnlogin"  class="btn btn-primary g-recaptcha" value="Agendar cita">
+                                    <input type="submit"  name="btnlogin" id="btnlogin"  class="btn btn-primary g-recaptcha" value="Agendar cita">
                                 </div>
                             </form>
                         </div>
@@ -228,10 +225,7 @@
                             <textarea cols="30" rows="10" id="mensaje" placeholder="Mensaje..." required></textarea>
                         </div>
                         <div class="button-area">
-                            <button class="g-recaptcha" 
-                            data-sitekey="6LdT-mQgAAAAAGJmWLLj9opGqRvSuEss0uCRbA13" 
-                            data-callback='onSubmit' 
-                            data-action='submit'  type="submit">Enviar mensaje</button>
+                            <button type="submit">Enviar mensaje</button>
                         </div>
                         
                     </form>
