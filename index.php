@@ -269,5 +269,6 @@
     </script>
     <script src="./style/js/alerts.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Código de instalación Cliengo para ct749063@gmail.com --> <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/62b8dad3f120dc002a1e2683/62b8dad5f120dc002a1e2686.js?platform=view_installation_code'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
 </body>
 </html>
